@@ -12,25 +12,25 @@
 
       <div class="container">
         <div id="visor">
-            <input class="display" value="" placeholder="00:00" disabled  >
+            <input class="display" id="display" value="" placeholder="00:00" disabled  >
         </div>
 
         <div id="micro-menu">
-             <input type="button" class="btn-number" value="1"   >
-             <input type="button" class="btn-number" value="2"  >
-             <input type="button" class="btn-number" value="3"  >
-             <input type="button" class="btn-number" value="4"  >
-             <input type="button" class="btn-number" value="5"  >
-             <input type="button" class="btn-number" value="6"  >
-             <input type="button" class="btn-number" value="7"  >
-             <input type="button" class="btn-number" value="8"  >
-             <input type="button" class="btn-number" value="9"  >
-             <input type="button" class="btn-act" value="Cancelar"  >
-             <input type="button" class="btn-number" value="0"  >
-             <input type="button" class="btn-act" value="iniciar" >
+             <input type="button" class="btn-number" value="1"  onclick="insert('1')">
+             <input type="button" class="btn-number" value="2"  onclick="insert('2')">
+             <input type="button" class="btn-number" value="3"  onclick="insert('3')">
+             <input type="button" class="btn-number" value="4"  onclick="insert('4')">
+             <input type="button" class="btn-number" value="5"  onclick="insert('5')">
+             <input type="button" class="btn-number" value="6"  onclick="insert('6')">
+             <input type="button" class="btn-number" value="7"  onclick="insert('7')">
+             <input type="button" class="btn-number" value="8"  onclick="insert('8')">
+             <input type="button" class="btn-number" value="9"  onclick="insert('9')">
+             <input type="button" class="btn-act" value="Cancelar"  onclick="insert('x')">
+             <input type="button" class="btn-number" value="0" onclick="insert('0')"  >
+             <input type="button" class="btn-act" value="iniciar" onclick="insert('i')" >
         </div>
 
-        <div class="food hide">
+        <div class="food">
             <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/ae44a720523113.562ecb2eb7af5.gif" alt="cooking">
         </div>
       </div>
