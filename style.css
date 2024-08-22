@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+input{
+    width: 95px;
+    height: 80px;
+    padding: 20px;
+    border-radius: 10px;
+    border:none;
+    background-color: rgb(212, 209, 209);
+}
+
+input:hover{
+    background-color: rgb(228, 228, 228);
+}
+
+.container{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+}
+
+#visor{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 310px;
+    height: 80px;
+    background-color: rgb(61, 60, 60);
+    margin: 20px 95px 20px 0px;
+    border-radius: 20px;
+}
+
+#visor input:disabled{
+    width: 300px;
+    height: 70px;
+    padding: 10px;
+    font-size: 50px;
+    color: rgb(134, 236, 243);
+    background-color: rgb(100, 99, 99);
+    text-align: center;
+    border-radius:15px;
+    border:none;
+}
+
+#micro-menu{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px 10px;
+    width: 400px ;
+}
+
+.food{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.food img{
+    margin: 20px 95px 20px 0px;
+    width: 280px;
+    border-radius: 20px;
+}
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width:400px) {
+    .container{
+        width: 300px;
+
+    }
+    #visor{
+        width: 300px;
+    }
+    #visor input:disabled{
+        width: 290px;
+    }
+    .display{
+        width: 290px;
+    }
+
+}
+
+
