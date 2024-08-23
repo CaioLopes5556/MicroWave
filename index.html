@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
     <link type="text/css" rel="stylesheet" href="style.css">
     <title>Microwave</title>
 </head>
@@ -11,8 +11,9 @@
     <main>
 
       <div class="container">
+
         <div id="visor">
-            <input class="display" id="display" value="" placeholder="00:00" disabled  >
+            <input class="display" value="" placeholder="00:00" disabled  >
         </div>
 
         <div id="micro-menu">
@@ -25,19 +26,16 @@
              <input type="button" class="btn-number" value="7"  onclick="insert('7')">
              <input type="button" class="btn-number" value="8"  onclick="insert('8')">
              <input type="button" class="btn-number" value="9"  onclick="insert('9')">
-             <input type="button" class="btn-act" value="Cancelar"  onclick="insert('x')">
+             <input type="button" class="btn-act" value="cancelar" id="cancel" onclick="clean()">
              <input type="button" class="btn-number" value="0" onclick="insert('0')"  >
-             <input type="button" class="btn-act" value="iniciar" onclick="insert('i')" >
+             <button id="bt" >iniciar</button>
         </div>
 
-        <div class="food">
-            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/ae44a720523113.562ecb2eb7af5.gif" alt="cooking">
+        <div class="micro-food">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/ae44a720523113.562ecb2eb7af5.gif" alt="cooking">
         </div>
+
       </div>
-
-      
-        
-
     </main>
 </body>
 </html>

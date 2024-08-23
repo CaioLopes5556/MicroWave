@@ -1,3 +1,9 @@
+/* importando as fontes utilizadas */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+
+/* eliminando as configurações default */
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +11,11 @@
 }
 
 body{
-    background-color: black;
+    background-color: rgb(26, 26, 26);
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 main{
@@ -13,22 +23,46 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: rgb(26, 26, 26);
 }
 
-input{
+/* estilizando os botões principais */
+
+input, button{
     width: 95px;
     height: 80px;
     padding: 20px;
     border-radius: 10px;
     border:none;
     background-color: rgb(212, 209, 209);
+    font-size: 15px;
+    font-style: bold;
+    text-align: center;
+    box-shadow: 3px 3px 1px 1px rgb(136, 136, 136);
 }
+
+/* mudando a cor quando os botões são tocados */
 
 input:hover{
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(255, 255, 255);
 }
 
+button:hover{
+    background-color: rgb(83, 245, 51);
+    color: rgb(0, 0, 0);
+
+}
+
+/* estilizando o botão de cancelar/limpar a parte */
+
+[id="cancel"]:hover{
+    color:rgb(255, 255, 255);
+    background-color: rgb(245, 51, 51);
+}
+
+/* estilizando as divs */
+
+/* div principal */
 .container{
     display: flex;
     flex-flow: column wrap;
@@ -37,6 +71,7 @@ input:hover{
     width: 320px;
 }
 
+/* div do timer do microondas */
 #visor{
     display:flex;
     align-items: center;
@@ -48,6 +83,7 @@ input:hover{
     border-radius: 20px;
 }
 
+/* estilizando o input e fonte dos numeros do timer */
 #visor input:disabled{
     width: 300px;
     height: 70px;
@@ -58,8 +94,13 @@ input:hover{
     text-align: center;
     border-radius:15px;
     border:none;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
+/* div do menu - organizando os botões e area ocupada */
 #micro-menu{
     display: flex;
     flex-flow: row wrap;
@@ -67,25 +108,24 @@ input:hover{
     width: 400px ;
 }
 
-.food{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* estiliza o gif */
+.micro-food{
+    /* esconde o gif */
+    display: none;
 }
-.food img{
+.micro-food img{
     margin: 20px 95px 20px 0px;
     width: 280px;
     border-radius: 20px;
+    /* efeito de sombra vermelha em volta */
+    box-shadow: 0 0 15px 5px rgb(248, 39, 39);
 }
 
-.hide{
-    display: none;
-}
+/* aplica resposividade as divs principais */
 
 @media screen and (max-width:400px) {
     .container{
         width: 300px;
-
     }
     #visor{
         width: 300px;
